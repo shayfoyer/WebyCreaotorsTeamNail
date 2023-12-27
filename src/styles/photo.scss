@@ -1,0 +1,156 @@
+.photo{
+  background-image: url("../images/BgvectorImg.png");
+  height: 100vh;
+  font-size: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 0 top 140px ;
+}
+
+.center{
+  padding-left: 15%;
+}
+
+.content{
+  padding-top: 70px;
+}
+
+.photo_container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.bg{
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.photo_title {
+  margin: 0;
+  font-family: Noto Serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #664931;
+}
+
+.photo_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+.photo_link {
+  padding-left: 5%;
+}
+
+.photo_image {
+  padding-bottom: 30px;
+}
+
+.photo_button-link {
+  padding: 0;
+  width: 444px;
+  height: 105px;
+  background: linear-gradient(92.77deg, #ff069c 22.26%, #ff811b 74.28%);
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+}
+
+.photo_button-logo {
+  margin-left: 20%;
+}
+
+.photo_button-text {
+  color: #ffffff;
+  font-family: "Noto Serif";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  width: 238px;
+  text-align: start;
+  padding-left: 13%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .photo{
+    background-image: none;
+  }
+
+  .content {
+    width: 300px;
+    padding-bottom: 20px;
+    height: 100%;
+    margin-left: 5%;
+  }
+
+  .center{
+    padding-left: -20%;
+  }
+
+  .photo_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .photo_title {
+    padding-bottom: 5%;
+    font-size: 35px;
+    line-height: 49px;
+  }
+
+  .photo_grid {
+    margin-left: -14%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+  }
+
+  .photo_img {
+    width: 300px;
+  }
+
+  .photo_link {
+    padding-top: 40px;
+    padding-left: 0;
+    margin-left: -14%;
+  }
+
+  .photo_image {
+    width: 300px;
+    padding-bottom: 40px;
+  }
+
+  .photo_button-link {
+    width: 300px;
+    height: 71px;
+  }
+
+  .photo_button-text {
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 20px;
+  }
+
+  .photo_button-mobilelogo {
+    padding-right: 30px;
+  }
+  
+  .main__photo_button-mobilelogo{
+    display: flex;
+    width: 20%;
+    margin-right: 4%;
+  }
+}

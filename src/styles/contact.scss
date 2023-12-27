@@ -1,0 +1,232 @@
+.contents {
+  padding-top: 50px;
+  background-image: url('../images/BgVectorContact.png');
+  font-size: 50px;
+  background-size: 976px 960px;
+  background-repeat: no-repeat;
+  background-position: right 0 top 140px;
+  scroll-behavior: smooth;
+}
+
+.bgs {
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+
+.contact_title {
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  color: #664931;
+  text-align: center;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_maps {
+  width: 640px;
+  height: 687px;
+}
+
+.contact_right {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin-left: 10%;
+}
+
+.centers {
+  padding-left: 18%;
+}
+
+.contact_adress {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.contact_mapIcon {
+  width: 40px;
+  height: 57px;
+  padding-top: 30px;
+}
+
+.contact_text,
+.contact_number {
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  color: #664931;
+  margin: 0;
+  padding-left: 10%;
+}
+
+.contact_phone {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.contact_phone-icon {
+  width: 44px;
+  height: 71px;
+}
+
+.contact_button {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact_button-whatsapp {
+  padding: 0;
+  width: 444px;
+  height: 105px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(92.77deg, #3a9838 22.26%, #0d5020 74.28%);
+}
+
+.contact_button-map {
+  padding: 0;
+  width: 444px;
+  height: 105px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(92.77deg, #ecb833 48.12%, #fcc63d 74.28%);
+}
+
+.contact_button-waze {
+  padding: 0;
+  width: 444px;
+  height: 105px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(92.77deg, #00d1ff 48.12%, #9671ff 74.28%);
+}
+
+.contact_button-text {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Noto Serif";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  width: 248px;
+  text-align: start;
+  padding-left: 15%;
+}
+
+.contact_button-iconwapp,
+.contact_button-iconwaze {
+  margin-left: 10%;
+}
+
+.contact_button-mobileiconmap {
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 390px) {
+  .contact_title {
+    font-size: 30px;
+    line-height: 41px;
+    padding-bottom: 15px;
+    margin-left: -19%;
+  }
+
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents {
+    background-image: url('../images/VectorContactMobile.png');
+    font-size: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .centers {
+    padding-left: 7%;
+  }
+
+  .contact_maps {
+    width: 300px;
+    height: 330px;
+  }
+
+  .contact_right {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .contact_adress {
+    padding-top: 40px;
+  }
+
+  .contact_button-whatsapp {
+    width: 300px;
+    height: 70px;
+  }
+
+  .contact_button-map {
+    width: 300px;
+    height: 70px;
+  }
+
+  .contact_button-waze {
+    width: 300px;
+    height: 70px;
+  }
+
+  .contact_button-text {
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 20px;
+    width: 160px;
+    text-decoration: none;
+  }
+
+  .contact_text,
+  .contact_number {
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 10%;
+  }
+
+  .contact_button-mobileiconwapp {
+    width: 60px;
+    padding-left: 10%;
+  }
+
+  .contact_button-mobileiconmap {
+    padding-left: 10%;
+    width: 40px;
+  }
+
+  .contact_button-mobileiconwaze {
+    padding-left: 10%;
+    width: 60px;
+  }
+
+  .contact_mobileicon {
+    margin-top: 20px;
+  }
+
+}

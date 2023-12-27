@@ -1,0 +1,9 @@
+/* .body__page {
+  max-width: 100%;
+  background-color: #ffeadd;
+} */
+
+h2 {
+  border-radius: 50%;
+  box-shadow: inset 0 0 510px 5px #F5D4B9;
+}

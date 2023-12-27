@@ -1,0 +1,41 @@
+.footer {
+  padding-left: 13%;
+  padding-bottom: 20px;
+}
+
+.footer__link {
+  padding-top: 50px;
+  padding-left: 80px;
+  color: #664931;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.footer__link_name {
+  color: #664931;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+@media screen and (max-width: 420px) {
+
+  .footer__link {
+    margin: 0;
+    width: 290px;
+    padding-top: 30px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: -33%;
+  }
+
+  .footer__link_name {
+    width: 290px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+}
