@@ -1,84 +1,82 @@
 .header_mobile {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  behavior: smooth;
-  align-items: center;
-  width: 100%;
-}
-
-.header__container_mobile {
-  display: flex;
-  flex-direction: column;
-  width: 296px;
-  padding-left: 20%;
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header__logo_mobile {
-  width: 296px;
-
+    width: 82%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .header__logo_image_mobile {
-  width: 266px;
-  padding-top: 10%;
+    width: 90%;
+    margin: 10% 0%;
 }
 
 .header__text_mobile {
-  width: 212px;
-  height: 120px;
-  color: #66493196;
-  font-size: 28px;
-  line-height: 30px;
-  text-align: center;
-  padding-left: 13%;
-  font-family: Noto Serif;
-  font-size: 28px;
-  font-weight: 500;
-  letter-spacing: 0em;
-  text-align: center;
-
+    width: 65%;
+    margin: 0 auto;
+    color: #66493196;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .header__nav_mobile {
-  padding-top: 14%;
-  margin-right: 5%;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  height: 50%;
+    margin-top: 14%;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 50%;
 }
 
 .header__nav_link_mobile {
-  background: linear-gradient(90.32deg, #83bd9e 2.23%, #3d7a59 80.94%);
-  width: 280px;
-  height: 60px;
-  border-radius: 30px;
-  color: #ffffff;
-  font-size: 28px;
-  line-height: 38px;
-  text-align: center;
-  scroll-behavior: smooth;
-  font-family: "Noto Serif";
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+    background: linear-gradient(90.32deg, #83bd9e 2.23%, #3d7a59 80.94%);
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightLeave,
+.leftLeave {
+    width: 52px;
 }
 
 .rightLeave {
-  display: flex;
-  width: 52px;
-  height: 52px;
-  margin-left: 66%;
-  margin-top: -23%;
+    position: absolute;
+    top: 86%;
+    right: 10%;
 }
 
 .leftLeave {
-  width: 52px;
-  height: 52px;
-  margin-bottom: -16%;
-  margin-left: 0%;
-  display: flex;
+    position: absolute;
+    top: 52%;
+    left: 0%;
+}
+
+@media screen and (min-width: 400px) {
+    .rightLeave {
+        top: 90%;
+        right: 15%;
+    }
+
+    .leftLeave {
+        top: 58%;
+        left: 5%;
+    }
+
+    .header__nav_mobile {
+        margin-top: 25%;
+    }
 }

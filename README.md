@@ -40,4 +40,4 @@ You have the option to scroll down to view the photos, prices, and contact detai
 -   [Kristina Stasevich](https://github.com/Kristina-web-development)
 -   [Voronina Julia](https://www.linkedin.com/in/julia-voronina-660a6a28b/)
 
-[Weby Creators Team](https://github.com/WebyCreatorsTeame)
+[Weby Creators Team](https://github.com/WebyCreatorsTeam)
