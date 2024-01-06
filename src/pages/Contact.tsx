@@ -54,14 +54,14 @@ const Contact: FC = () => {
                                 +972 53-205-2976
                             </a>
                         </div>
-                        {/* <div className="contact_button"> */}
+                    
                         <a
                             href="https://wa.me/+972532052976"
                             target="_blank"
                             rel="noreferrer"
                             className="contact_button-whatsapp"
                         >
-                            {/* <div className="contact_button-whatsapp"> */}
+                          
                             <p className="contact_button-text">
                                 Записаться в WhatsApp
                             </p>
@@ -70,7 +70,7 @@ const Contact: FC = () => {
                                 src={Whatsapp}
                                 alt="whattsapp logo"
                             />
-                            {/* </div> */}
+                          
                         </a>
                         <a
                             href="https://maps.app.goo.gl/7eyDYbMuYvR7RVvaA"
@@ -78,7 +78,7 @@ const Contact: FC = () => {
                             rel="noreferrer"
                             className=" contact_button-map"
                         >
-                            {/* <div className="contact_button-map"> */}
+                           
                             <p className="contact_button-text">
                                 Открыть в GoogleMaps
                             </p>
@@ -87,7 +87,7 @@ const Contact: FC = () => {
                                 src={Map}
                                 alt="map logo"
                             />
-                            {/* </div> */}
+                            
                         </a>
                         <a
                             href="https://waze.com/ul/hsvbfyhm1j"
@@ -95,7 +95,7 @@ const Contact: FC = () => {
                             rel="noreferrer"
                             className="contact_button-waze"
                         >
-                            {/* <div className="contact_button-waze"> */}
+                  
                             <p className="contact_button-text">
                                 Открыть в Waze
                             </p>
@@ -104,7 +104,7 @@ const Contact: FC = () => {
                                 src={Waze}
                                 alt="waze logo"
                             />
-                            {/* </div> */}
+                          
                         </a>
                     </div>
                 </div>

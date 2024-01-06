@@ -4,6 +4,7 @@ import Logo from "../images/logoimg.png";
 import RightLeave from "../images/rightLeave.png";
 import Leftleave from "../images/leftLeave.png";
 
+
 interface Link {
     link: string;
     text: string;
@@ -21,6 +22,7 @@ const Home: FC = () => {
             id="#home"
             className="header"
         >
+
             <nav className="header__nav_comp">
                 {navLink.map((link) => (
                     <a
