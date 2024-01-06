@@ -6,8 +6,9 @@ import Footer from "./pages/Footer";
 import HomeMobile from "./pages/HomeMobile";
 import "./styles/global.scss";
 import "./App";
-
 import { useMediaQuery } from "react-responsive";
+
+
 
 function App() {
     const isMobile = useMediaQuery({ query: `(max-width: 1100px)` });
@@ -21,6 +22,7 @@ function App() {
                 <Contact />
                 <Footer />
             </div>
+           
         </div>
     );
 }

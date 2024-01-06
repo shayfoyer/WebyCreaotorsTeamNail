@@ -5,7 +5,8 @@ We've developed a website for Anastasiya Ganeeva's nail salon, aimed at assistin
 ## Challenges
 
 We encountered several challenges during our project. Initially, we attempted to integrate Google Translator to enable the page's translation from Russian, aiming to reach a broader customer base.
-Unfortunately, the translation disappeared after refreshing or navigating to a new page. Despite extensive internet research, we couldn't find a solution to fix this issue. We experimented with relocating the function and script, but to no avail. We're determined to explore alternative solutions in the near future.
+Unfortunately, the translation disappeared after refreshing or navigating to a new page. Despite extensive internet research, we couldn't find a solution to fix this issue. We experimented with relocating the function and script, but to no avail.
+ we found a solution with google translate tag in HTML and we could design it to look like we wanted also we found a way in the web to make fewer option for translate.
 
 Additionally, we faced difficulty creating separate components for the home: one for mobile view and another for computer and tablet displays. Initially, this seemed unsolvable, but our quest for answers led us to 'react-responsive.' This tool enabled us to utilize queries and 'useMedia' to identify the current view.
 
