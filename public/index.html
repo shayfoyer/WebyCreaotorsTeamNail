@@ -34,16 +34,21 @@
     -->
         <title>Anastasiya Ganeeva</title>
         <style>
-
+        
+.goog-te-banner-frame.skiptranslate{
+  display: none !important;
+}
 .VIpgJd-ZVi9od-ORHb{
                 display: none;
-             
+           
             }
           .VIpgJd-ZVi9od-ORHb-OEVmcd{
             display: none;
             height: 0px;
             width: 0px;
-            margin-top: -20px;
+            cursor: pointer;
+            visibility: hidden;
+            position: fixed;
           }
       select{
         background-color: transparent;
@@ -56,6 +61,12 @@
     option{
       background-color: #ffeadd;
     }
+          .translated-rtl{
+        direction: rtl;
+      }  
+      .translated-ltr{
+        direction: ltr;
+      }
       #google_translate_element{
         display: flex;
  align-items: center;
@@ -63,10 +74,11 @@
          cursor: pointer;
          position: absolute;
          margin-top: 8px;
+         direction: ltr !important;
       }
+
       @media screen and (max-width: 768px) {
         #google_translate_element{
-          margin-left: 28%;
         align-items: center;
        justify-content: center;
          cursor: pointer;
@@ -77,14 +89,9 @@
       }
         </style>
     </head>
-    <body> 
+    <body style="top: 0px;"> 
  
- 
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id='google_translate_element' dir="rtl">
-
-        </div>
-        <div id="root"> </div>
+      <div id="root"> </div>
         <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -104,6 +111,6 @@
       new google.translate.TranslateElement({ includedLanguages : 'iw,ru,en'}, 'google_translate_element');
     }
     </script>
-    
+ 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
