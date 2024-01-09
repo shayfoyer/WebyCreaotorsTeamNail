@@ -19,7 +19,7 @@ const images: Array<PhotoProps> = [
 ];
 
 const Photo: FC = () => {
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
     return (
         <div
             id="home"
