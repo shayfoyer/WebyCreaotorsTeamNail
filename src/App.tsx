@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import Photo from "./pages/Photo";
-import Price from "./pages/Price/Price";
+import Price from "./pages/Price";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import HomeMobile from "./pages/HomeMobile";
@@ -9,13 +9,14 @@ import "./App";
 import { useMediaQuery } from "react-responsive";
 
 
-
 function App() {
+   
     const isMobile = useMediaQuery({ query: `(max-width: 1100px)` });
 
     return (
         <div className="body__page">
-            {isMobile ? <HomeMobile /> : <Home />}
+            
+            {isMobile ? <HomeMobile /> : <Home/>}
             <div className="mainInfo">
                 <Photo />
                 <Price />

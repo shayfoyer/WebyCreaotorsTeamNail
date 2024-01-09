@@ -5,15 +5,17 @@ import Phone from "../images/Telephone.png";
 import Place from "../images/vectorLocation.png";
 import Iframe from "react-iframe";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact: FC = () => {
+    const [t, i18n] = useTranslation("global");
     return (
         <div
             id="contact"
             className="contact__contents"
         >
             <div className="contact__width">
-                <h2 className="contact_title">Контакты</h2>
+                <h2 className="contact_title">{t('contact.h2')}</h2>
                 <div className="contact_container centers">
                     <Iframe
                         className="contact_maps"
@@ -37,7 +39,7 @@ const Contact: FC = () => {
                             />
 
                             <p className="contact_text">
-                                Кирьят Ям, Гистрадут 8 <br />
+                               {t('contact.p1')} <br />
                                 קרית ים ,ההסתדרות 8
                             </p>
                         </div>
@@ -63,7 +65,7 @@ const Contact: FC = () => {
                         >
                           
                             <p className="contact_button-text">
-                                Записаться в WhatsApp
+                            {t('contact.p2')}
                             </p>
                             <img
                                 className="contact_button-mobileiconwapp"
@@ -80,7 +82,7 @@ const Contact: FC = () => {
                         >
                            
                             <p className="contact_button-text">
-                                Открыть в GoogleMaps
+                            {t('contact.p3')}
                             </p>
                             <img
                                 className="contact_button-mobileiconmap"
@@ -97,7 +99,7 @@ const Contact: FC = () => {
                         >
                   
                             <p className="contact_button-text">
-                                Открыть в Waze
+                            {t('contact.p4')}
                             </p>
                             <img
                                 className="contact_button-mobileiconwaze"

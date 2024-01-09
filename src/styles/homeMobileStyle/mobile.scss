@@ -5,7 +5,18 @@
     flex-direction: column;
     align-items: center;
 }
-
+.translateAreaMobile{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+margin-top: -40px;
+}
+.translateMobile{
+    border-radius: 20px;
+    border: solid 1px black;
+    background-color: transparent;
+}
 .header__logo_mobile {
     width: 82%;
     margin: 0 auto;
