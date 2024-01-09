@@ -1,0 +1,68 @@
+{
+    "header":{
+     "link":{
+"home":"Portfolio",
+"price":"Price",
+"contact":"Contacts"
+     },
+"p":"cozy care for your hands in Kiryat Yam and Krayot"
+
+    },
+"photo":{
+"h2":"Portfolio",
+
+"p":"More works on my Insagram"
+
+
+},
+"prices":{
+"h2":"Price",
+
+"title":"Manicure",
+
+
+"mani":"Manicure",
+
+"gelPolish":"Manicure + gel polish",
+
+"gel":"Manicure + gel strengthening",
+
+"men":"Men's Manicure",
+
+"down":"Taking down someone else's work",
+"h3":"Building up",
+
+"plain":"Plain",
+
+"correction":"Correction",
+
+"Full":"Full withdrawal",
+
+"left":"Additionally",
+"repair":"Crack repair (1 nail)",
+
+"extension":"Extension (1 nail)",
+
+"simple":"Simple design (1 nail)",
+
+"simple2":"Simple design (all fingers)",
+
+"complex":"Complex design (1 nail)",
+
+"complex2":"Complex design (all fingers)",
+
+"WhatsApp":"Check details on WhatsApp"
+
+},
+"contact":{
+"h2":"Contacts",
+
+"p1":"Kiryat Yam, the Histadrut 8",
+
+"p2":"Sign up via WhatsApp",
+
+"p3":"Open in GoogleMaps",
+
+"p4":"Open in Waze"
+     }
+     }

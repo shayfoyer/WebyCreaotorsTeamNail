@@ -1,32 +1,54 @@
-import { FC } from "react";
+import { FC,} from "react";
 import HomeImg from "../images/homeimg.png";
 import Logo from "../images/logoimg.png";
 import RightLeave from "../images/rightLeave.png";
 import Leftleave from "../images/leftLeave.png";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 
-interface Link {
+const Home: FC = () => { 
+       const [t, i18n] = useTranslation("global");
+    interface Link {
     link: string;
     text: string;
 }
 
 const navLink: Array<Link> = [
-    { link: "#home", text: "Портфолио" },
-    { link: "#price", text: "Прайс" },
-    { link: "#contact", text: "Контакты" },
+    { link: "#home", text: `${t('header.link.home')}`},
+    { link: "#price", text: `${t('header.link.price')}` },
+    { link: "#contact", text: `${t('header.link.contact')}` },
 ];
 
-const Home: FC = () => {
+
+
+    const handleChangeLang= (lang:string)=>{
+        i18n.changeLanguage(lang);
+   
+    };
+    useEffect(() => {
+        const dir = i18n.dir(i18n.language);
+        document.documentElement.dir = dir;
+     }, [i18n, i18n.language]);
     return (
         <header
             id="#home"
             className="header"
         >
-<div id='google_translate_element'>
-      
-        
-      </div>
-            <nav className="header__nav_comp">
+
+            <nav className="header__nav_comp"> 
+            
+           <div className="translateArea">
+            <button className="translate" onClick={()=>handleChangeLang("ru")}>
+                    Русский
+            </button>
+            <button className="translate" onClick={()=>handleChangeLang("en")}>
+                    English
+            </button>
+            <button className="translate" onClick={()=>handleChangeLang("he")}>
+                   עברית
+            </button>
+            </div>
                 {navLink.map((link) => (
                     <a
                         href={link.link}
@@ -35,7 +57,9 @@ const Home: FC = () => {
                         {link.text}
                     </a>
                 ))}
+             
             </nav>
+
             <div className="homeContainer">
                 <img
                     className="homeContainer__rightLeave"
@@ -54,7 +78,7 @@ const Home: FC = () => {
                         alt="logo name"
                     />
                     <p className="header__text">
-                        уютная забота о Ваших руках <br />в Кирьят Ям и Крайот
+                       {t("header.p")}
                     </p>
                 </div>
             </div>

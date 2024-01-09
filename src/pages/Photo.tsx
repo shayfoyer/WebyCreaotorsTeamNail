@@ -5,6 +5,7 @@ import Photo4 from "../images/portfolio4.JPG";
 import PhotoLeft from "../images/leftPhoto.png";
 import Insta from "../images/instalogo.png";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 interface PhotoProps {
     img: string;
@@ -18,13 +19,14 @@ const images: Array<PhotoProps> = [
 ];
 
 const Photo: FC = () => {
+    const [t, i18n] = useTranslation("global");
     return (
         <div
             id="home"
             className="content photo"
         >
             <div className="photo__width">
-                <h2 className="photo_title">Портфолио</h2>
+                <h2 className="photo_title">{t('photo.h2')}</h2>
 
                 <div className="photo_container center">
                     <div className="photo_grid">
@@ -49,7 +51,7 @@ const Photo: FC = () => {
                                 className="photo__insta__link"
                             >
                                 <p className="photo_button-text">
-                                    Больше работ в моем Insagram
+                                   {t('photo.p')}
                                 </p>
                                 <img
                                     className="main__photo_button-mobilelogo"
