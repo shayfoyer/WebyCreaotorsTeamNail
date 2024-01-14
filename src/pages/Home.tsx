@@ -24,12 +24,13 @@ const navLink: Array<Link> = [
 
     const handleChangeLang= (lang:string)=>{
         i18n.changeLanguage(lang);
-   
+
     };
     useEffect(() => {
         const dir = i18n.dir(i18n.language);
         document.documentElement.dir = dir;
      }, [i18n, i18n.language]);
+
     return (
         <header
             id="#home"
