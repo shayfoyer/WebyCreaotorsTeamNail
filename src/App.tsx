@@ -1,3 +1,4 @@
+
 import Home from "./pages/Home";
 import Photo from "./pages/Photo";
 import Price from "./pages/Price";
