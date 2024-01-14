@@ -68,3 +68,4 @@ const Photo: FC = () => {
 };
 
 export default Photo;
+

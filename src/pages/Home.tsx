@@ -34,21 +34,22 @@ const navLink: Array<Link> = [
         <header
             id="#home"
             className="header"
-        >
-
-            <nav className="header__nav_comp"> 
-            
-           <div className="translateArea">
-            <button className="translate" onClick={()=>handleChangeLang("ru")}>
-                    Русский
-            </button>
+        > 
+        <div className="translateArea">
             <button className="translate" onClick={()=>handleChangeLang("en")}>
-                    English
+                    EN
             </button>
             <button className="translate" onClick={()=>handleChangeLang("he")}>
-                   עברית
+                    HE
+            </button>
+            <button className="translate" onClick={()=>handleChangeLang("ru")}>
+                   RU
             </button>
             </div>
+            <nav className="header__nav_comp"> 
+          
+
+            
                 {navLink.map((link) => (
                     <a
                         href={link.link}
