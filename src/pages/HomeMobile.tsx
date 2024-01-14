@@ -21,15 +21,15 @@ const Home: FC = () => {
             className="header_mobile"
             style={styleHome}
         >
-              <div className="translateAreaMobile">
-            <button className="translateMobile" onClick={()=>handleChangeLang("ru")}>
-                    Русский
-            </button>
+            <div className="translateAreaMobile">
             <button className="translateMobile" onClick={()=>handleChangeLang("en")}>
-                    English
+                    EN
             </button>
             <button className="translateMobile" onClick={()=>handleChangeLang("he")}>
-                   עברית
+                    HE
+            </button>
+            <button className="translateMobile" onClick={()=>handleChangeLang("ru")}>
+                   RU
             </button>
             </div>
     
